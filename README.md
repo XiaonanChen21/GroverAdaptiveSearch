@@ -3,9 +3,8 @@ In this file we implement ''Grover Adaptive Search for Constrained Polynomial Bi
 *   a threshold, $t\in \mathbb{Z}$
 *   a constraint function $C: \mathbb{F}_2^n\to \mathbb{Z}$
 
-and outputs marker oracle $U_{f,t,C}$ such that
-$U_{f,t,C}|x⟩_n|y⟩_1=\begin{cases}|x⟩_n|y\oplus 1⟩_1, \; \mathrm{if}\; f(x)>t \; \mathrm{ and } \; C(x)\ge 0 \\|x⟩_n|y⟩_1, \; \mathrm{otherwise.}
-\end{cases}$
+and outputs marker oracle $U_{f,t,C}$ such that $$U_{f,t,C}|x⟩_n|y⟩_1=\begin{cases}|x⟩_n|y\oplus 1⟩_1, \; \mathrm{if}\; f(x)>t \; \mathrm{ and } \; C(x)\ge 0 \\|x⟩_n|y⟩_1, \; \mathrm{otherwise.}
+\end{cases}$$
 
 We implement GAS by the following steps:
 *   Realize function $f$ and $C$ by circuits (For simplicity, assume $f,C$ are polynomials)
